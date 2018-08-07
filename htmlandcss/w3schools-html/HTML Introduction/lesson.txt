@@ -45,3 +45,11 @@ NOTE: Only the content inside the <body> section (the white area above) is displ
 
 	The <!DOCTYPE> Declaration
 The <!DOCTYPE> declaration represents the document type, end helps browsers to display web pages correctly;
+It must only appear once, at the top of the page (before any HTML tags);
+The <!DOCTYPE> declaration is not case sensitive;
+The <!DOCTYPE> declaration for HTML5 is: "<!DOCTYPE html>"
+
+Version		Year
+HTML 4.01	1999
+XHTML		2000
+HTML5		2014
