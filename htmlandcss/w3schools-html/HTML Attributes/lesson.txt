@@ -1,0 +1,58 @@
+	HTML Attributes
+Attributes provide additional information about HTML elements.
+
+#All HTML elements can have attributess
+#Attibutes provide additional information about an element
+#Attributes are always specified in the start tag
+#Attributes usually come in name/value pairs like: name="value"
+
+	The href Attribute 
+HTML links are defined with the <a> tag. The link address is specified in the href attribute.
+You will learn more about links and the <a> tag later in this tutorial.
+
+	The src Attribute
+HTML images are defined with the <img> tag.
+The filename of the image source is specified in the src attribute.
+
+	The width and height Attributes 
+Images in HTML have a set of size attributes, which specifies the width and height of the image.
+The image size is specified in pixels: width="500" means 500 pixels wide.
+
+	The alt Attribute
+The alt attribute specified an alternative text to be used, when an image cannot be displayed.
+The value of the attribute can be read by screen readers. This way, someone "listening" to the webpage, e.g. a blind person, can "hear" the element.
+The alt attribute is also useful if the image does not exist;
+
+	The style Attribute
+The style attribute is used to specify the styling of an element, like color, font, size etc.
+	
+	The lang Attribute
+The language of the document can be declared in the <html> tag.
+The language is declared with the lang attribute.
+Declaring a language is important for accessibility applications (screen readers) and search engines: <html lang="en-US">;
+The first two latter specify the language (en). If there is a dialect, use two more letters (US).
+
+	The title Attribute
+Here, a title attribute is added to the <p> element. The value of the title attribute will be displayed as a tooltip when you moyse over the paragraph;
+
+	We Suggest: Use Lowercase Attributes 
+The HTML5 standard does not require lowercase attribute names.
+The title attribute can be written with uppercase or lowercase like title or TITLE.
+W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML. 
+	AT W3SCHOOLS WE ALWAYS USE LOWERCASE ATTRIBUTE NAMES.
+
+	USING QUOTES ARE THE MOST COMMON. OMITTING QUOTES CAN PRODUCE ERRORS.
+	AT W3SCHOOLS WE ALWAYS USE QUOTES AROUND ATTRIBUTE VALUES.
+______________________________________________________________________________________________________________________________________________
+
+	Chapter Summary 
+#All HTML elements can have attributes
+#The title attribute provides additional "tool-tip" information
+#The href attribute provides address information for links
+#The width and height attributes provide size information for images
+#The alt attribute provides text for screen readers
+#At W3Schools we always use lowercase attribute names
+#At W3Schools we always quote attribute values with double quotes
+
+
+
