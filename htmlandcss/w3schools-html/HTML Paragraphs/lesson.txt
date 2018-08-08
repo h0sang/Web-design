@@ -1,0 +1,34 @@
+	HTML Paragraphs
+The HTML <p> element defines a paragraph.
+NOTE: Browsers automatically add some white space (a margin) before and after a paragraph.
+
+	HTML Display
+You cannot be sure how HTML will be displayed.
+Large or small screens, and resized windows will creating different results.
+With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code.
+The browser will remove any extra spaces and extra lines when the page is displayes.
+
+	Don't Forget the End Tag
+Most browsers will display HTML correctly even if you forget the end tag.
+NOTE: Dropping the end tag can produce unexpected results or errors.
+
+	HTML Line Breaks
+The HTML <br> element defines a line break.
+Use <br> if you want a line break (a new line) without starting a new paragraph.
+The <br> tag is an empty tag, which means that it has no end tag.
+
+	The Poem Problem
+This poem will display on a single line.
+<p>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</p> 
+
+	The HTML <pre> Element
+The HTML <pre> element defines preformatted text.
+The text inside a <pre> element is displayed ina fixed-width font (usually Courier), and it preserves both spaces and line breaks.
