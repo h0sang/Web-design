@@ -1,0 +1,25 @@
+	HTML Heading
+Headings are defined with the <h1> to <h6> tags.
+<h1> defines the most important heading. <h6> defines the least important heading.
+NOTE: Browsers automatically add some white space (a margin) before and after a heading.
+
+	Headings Are Important
+Search engines use the headings to index the structure and content of your web pages.
+User skim your pages by its headings. It is important to use headings to show the document structure.
+<h1> headings should be used for main headings, followed by <h2> headings, then the less important <h3>, and so on.
+NOTE: Use HTML headings for headings only. Don't use headings to make text BIG or bold.
+
+	Bigger Headings
+Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property:
+<h1 style="font-size:60px;">Heading 1</h1>
+
+	HTML Horizontal Rules
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+The <hr> element is used to separate content (or define a change) in an HTML page
+
+	The HTML <head> Element
+The HTML <head> element has nothing to do with HTML headings.
+The <head> element is a contaiber for metadata is data about the HTML document. Metadata is not displayed.
+The <head> element is placed between the <html> tag and the <body> tag: <meta charset="UTF-8">
+
+NOTE: Metadata typically define the document title, character  set, styles, links, scripts, and other meta information.
