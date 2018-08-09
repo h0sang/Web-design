@@ -1,0 +1,17 @@
+	HTML Color
+HTML colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+
+	Color Names
+In HTML, a color can be specified by using a color name: Tomato, Orange, DodgerBlue, MediumSeaGreen, Gray, SlateBlue, Violet, LightGray.
+
+	Background Color
+You can set the background color for HTML elements;
+(<p style="background-color:Tomato;">Lorem ipsum...<p>)
+
+	Text Color
+You can set the color of text;
+(<p style="color:DodgerBlue;">Hello World</p>)
+
+	Border Color
+You can set the color of borders;
+(<h1 style="border:2px solid Violet;">Lorem ipsum...</h1>)
