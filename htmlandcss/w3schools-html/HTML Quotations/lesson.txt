@@ -1,0 +1,25 @@
+	HTML Quotations
+	HTML <q> for Short Quotations
+The HTML <q> element defines a short quotation.
+Browsers usually insert quotation marks around the <q> element.
+
+	HTML <blockquote> for Quotations
+The HTML <blockquote> element defines a section that is quoted from another source.
+Browsers usually indent <blockquote> elements.
+
+	HTML <abbr> for Abbreviations
+The HTML <abbr> element defines an abbreviation or an acronym.
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+<abbr title="World Health Organization">WHO</abbr>
+
+	HTML <address> for Contact Information
+The HTML <address> element defines contact information (author/owner) of a document or an article.
+The <address> element is usually displayed in italic. Most browsers will add a line break before and after the element.
+
+	HTML <city> for Work Title
+The HTML <city> element defines the title of a work.
+Browsers usually display <city> elements in italic.
+
+	HTML <bdo> for Bi-Directional Override
+The HTML <bdo> element defines bi-directional override.
+The <bdo> element is used to override the current text direction
