@@ -1,0 +1,59 @@
+	Defining an HTML Table
+An HTML table is defined with the <table> tag.
+Each table row is defined with the <tr> tag. A table header is defined with the <th> tag.
+By default, table headings are bold and centered. A table data/cell is defined with the <td> tag.
+NOTE: The <td> elements are the data containers of the table.
+They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+
+	HTML Table - Adding a Border
+If you do not a border for the table, it will be displayed without borders.(just add border attribute in <table> tag)
+A border is set using the CSS border property:
+(
+table, th, td {
+    border: 1px solid black;
+}
+)
+Remember to define borders for both the table and the table cells.
+
+	HTML Table - Collapsed Borders
+Ifyou want the borders to collapse into one border, add the CSS border-collapse property:
+ border-collapse: collapse;
+
+	HTML Table - Adding Cell Padding 
+Cell padding specifies the space between the cell content and its borders.
+If you do not specify a padding, the table cells will be displayed without padding.
+To set the padding, use the CSS padding property;
+
+	HTML Table - Left-align Heading
+By default, table headings are bold and centered.
+To left-align the table headings, use the CSS text-align property;
+
+	HTML Table - Adding Border Spacing 
+Border spacing specifies the space between the cells.
+To set the border spacing for a table, use the CSS border-spacing property;
+NOTE: If the table has collapsed borders, border-spacing has no effect.
+
+	HTML Table - Cells that Span Many Columns
+To make a cell span more than one column, use the colspan attribute
+
+	HTML Table - Cells that Span Many Rows
+To make a cell span more than one row, use the rowspan attribute
+
+	HTML Table - Adding a Caption	
+To add a caption to a table, use the <caption> tag
+NOTE: The <caption> tag must be inserted immediately after the <table> tag.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
