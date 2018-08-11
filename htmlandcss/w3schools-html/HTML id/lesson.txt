@@ -1,0 +1,20 @@
+	HTML The id Attribute
+	Using The id Attribute
+The id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).
+The id value can be used by CSS and JavaScript to perform certain tasks for a unique element with the specified id value.
+In CSS, to select an element with a specific id, write a hash (#) character, followed by the id of the element
+TIP: The id attribute can be used on any HTML element.
+NOTE: The id value is case-sensitive.
+
+	Difference Between Class and ID
+An HTML element can only have one unique id that belongs to that single element, while a class name can be used by multiple
+elements;
+	
+	Using The id Attribute in JavaScript 
+JavaScript can access an element with a specified id by using the getElementById() method;
+
+	Bookmarks with ID and Links
+HTML bookmarks are used to allow readers to jump to specific parts of a Web page.
+Bookmarks can be useful if your webpage is very long.
+To make a bookmark, you must first create the bookmark, and then add a link to it.
+When the link is clicked, the page will scroll to the location with the bookmark.
