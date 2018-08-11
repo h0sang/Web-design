@@ -1,0 +1,17 @@
+	HTML The class Attribute
+	Using The class Attribute
+The class attribute specifies one or more class names for an HTML element.
+The class name can be used by CSS and JavaScript to perform certain tasks for elements with the specified class name.
+In CSS, to select element with a specific class, write a period (.) character, followed by the name of the class;
+	TIP: The class attribute can be used on any HTML element.
+	NOTE: The class name is case sensitive!
+
+	Using The class Attribute in JavaScript 
+JavaScript can access elements with a specified class name by using the getElementsByClassName() method:
+
+	Multiple Classes
+HTML elements can have more than one class name, each class name must be separated by a space.
+In the example above, the first <h2> element belongs to both the "city" class and the "main" class.
+
+	Same Class, Different Tag
+Different tags, like <h2> and <p>, can have the same class name and thereby share the same style
