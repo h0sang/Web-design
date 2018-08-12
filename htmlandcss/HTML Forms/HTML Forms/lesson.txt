@@ -1,0 +1,132 @@
+	The <form> Element
+The HTML <form> element defines a form that is used to collect user input;
+An HTML form contains form elements.
+Form elements are different types of input elements, like text fields, checkboxes, radio buttons, and more.
+
+	The <input> Element
+The <input> element is the most important form element.
+An HTML form contains form elements.
+Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
+
+	The <input> Element
+The <input> element is the most important form element.
+The <input> element can be displayed in several ways, depending on the type attribute.
+	
+Here are some examples:
+<input type="text"> 	- Defines a one-line text input field
+<input type="radio"> 	- Defines a radio button (for selecting one of many choices)
+<input type="submit"> 	- Defines a submit button (for submitting the form)
+
+	The Action Attribute
+The action attribute defines the action to be performed when the form is submitted.
+Normally, the form data is sent to a web page on the server when the user clicks on the submit button.
+In the example above, the form data is sent to a page on the server called "/action_page.php". 
+This page contains a server-side script that handles the form data:
+	<form action="/action_page.php">
+If the action attribute is omitted, the action is set to the current page.
+
+	The Target Attribute
+The target attribute specifies if the submitted result will open in a new browser tab, a frame, or in the current window.
+The default value is "_self" which means the form will be submitted in the current window.
+To make the form result open in a new browser tab, use the value "_blank":
+	 <form action="/action_page.php" target="_blank"> 
+Other legal values are "_parent", "_top", or a name representing the name of an iframe.
+
+	The Method Attribute
+The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form data:
+ <form action="/action_page.php" method="get"> 
+or:
+ <form action="/action_page.php" method="post"> 
+
+	When to Use GET?
+	The default method when submitting form data is GET.
+However, when GET is used, the submitted form data will be visible in the page address field:
+/action_page.php?firstname=Mickey&lastname=Mouse
+	Notes on GET:
+    # Appends form-data into the URL in name/value pairs
+    # The length of a URL is limited (about 3000 characters)
+    # Never use GET to send sensitive data! (will be visible in the URL)
+    # Useful for form submissions where a user wants to bookmark the result
+    # GET is better for non-secure data, like query strings in Google
+
+	When to Use POST?
+Always use POST if the form data contains sensitive or personal information. The POST method does not display 
+the submitted form data in the page address field.
+Notes on POST:
+    # POST has no size limitations, and can be used to send large amounts of data.
+    # Form submissions with POST cannot be bookmarked
+
+	The Name Attribute
+Each input field must have a name attribute to be submitted.
+If the name attribute is omitted, the data of that input field will not be sent at all.
+This example will only submit the "Last name" input field:
+ <form action="/action_page.php">
+  First name:<br>
+  <input type="text" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+ </form> 
+
+	Grouping Form Data with <fieldset>
+The <fieldset> element is used to group related data in a form.
+The <legend> element defines a caption for the <fieldset> element.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
