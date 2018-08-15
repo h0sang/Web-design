@@ -1,0 +1,56 @@
+	CSS Backgrounds
+The CSS background properties are used to define the background effects for elements.
+CSS background properties: 
+	# background-color;
+	# background-image;
+	# background-repeat;
+	# background-attachment;
+	# background-position;
+
+	Background Color
+The background-color property specifies the background color of an element.
+With CSS, a color is most often specified by:
+	# a valid color name - like "red";
+	# a HEX value - like "#ff0000";
+	# an RGB value - like "rgb(255,0,0)";
+
+	Background Image
+The background-image property specifies an image to use as the background of an element.
+By default, the image is repeated so it covers the entire element.
+The background image for a page can be set like this:
+	background-image: url("picture.jpg");
+NOTE: When using a background image, use an image that does not disturb the text.
+
+	Background Image - Repeat Horizontelly or Vertically
+By default, the background-image property repeats an image both horizontally and vertically.
+If the image above is repeated only horizontally (background-repeat: repeat-x;);
+TIP: To repeat an image vertically, set background-repeat: repeat-y;
+
+	Background Image - Set position and no-repeat
+In the example above, the background image is shown in the same place as the text. We want to change 
+the position of the image, so that it does not disturb the text too much.
+The position of the image is specified by the background-position property;
+
+	Background Image - Fixed position
+To specify that the background image should be fixed (will not scroll with the rest of the page), use
+the background-attachment property: fixed;
+
+	Background - Shorthand property
+To shorten the code, it is also possible to specify all the background properties in one single
+property. This is called a shorthand property.
+
+	Example:
+	background: #ffffff url("img_tree.png") no-repeat right top;
+
+	
+
+
+
+
+
+
+
+
+
+
+
