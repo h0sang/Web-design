@@ -163,3 +163,39 @@ h1 {
 .works img:last-child {
   float: right;
 }
+
+#about {
+  padding-bottom: 120px;
+}
+
+.wfirst {
+  margin-top: 70px;
+  width: 550px;
+  float: left;
+  text-align: right;
+}
+
+.wfirst h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+.wfirst p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.wfirst img {
+  text-align: center;
+}
+
+.wfirst:nth-child(3) {
+  float: right;
+  text-align: left;
+}
+
+.wfirst img:nth-child(3) {
+  text-align: center;
+}
