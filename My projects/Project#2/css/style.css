@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Lato, Arial, sans-serif;
+}
+
+header {
+  height: 100vh;
+  background: url(../images/header.png) no-repeat center top / cover;
+}
+
+.title {
+  text-align: center;
+  padding-top: 175px;
+}
+
+.title h1 {
+  font-size: 60px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.title p {
+  margin-top: 20px;
+  color: #d0e7e9;
+  font-size: 17px;
+  line-height: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: Lato;
+  src: url(fonts/Lato-light.ttf);
+}
