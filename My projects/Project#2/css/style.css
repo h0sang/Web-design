@@ -5,6 +5,13 @@
 
 body {
   font-family: Lato, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 header {
@@ -30,8 +37,92 @@ header {
   line-height: 2em;
 }
 
+.outer {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-left: -170px; /* (width + padding)/2 */
+  margin-top: -120px; /* (height + padding)/2 */
+}
 
+.start {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  background: #7accc8;
+  border-radius: 5px;
+  width: 280px;
+  padding: 22px 0;
+  margin: 0 auto;
+  margin-top: 490px;
+}
 
+.button__play {
+  box-sizing: border-box;
+  margin-top: 75px;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 10px solid white;
+  border-radius: 100px;
+  padding-top: 23px;
+  padding-left: 8px;
+}
+
+.play {
+  margin: 0 auto;
+  transform: skewX();
+  transform: rotate(90deg);
+  height: 0px;
+  width: 0px;
+  border-right: 16px solid transparent;
+  border-bottom: 32px solid white;
+  border-left: 16px solid transparent;
+  border-radius: 3px;
+}
+
+section {
+  background: url(../images/iPad.png) no-repeat center top / cover;
+  height: 750px;
+}
+
+.sec_con {
+  text-align: left;
+  padding-top: 80px;
+}
+
+.sec_con h1 {
+  font-size: 55px;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.sec_con p {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 30px;
+  line-height: 2em;
+}
+
+.download {
+  display: block;
+  float: left;
+  font-weight: bold;
+  color: white;
+  border: 5px solid white;
+  width: 280px;
+  padding-left: 80px;
+  padding: 30px 0;
+  border-radius: 5px;
+  text-decoration: none;
+}
 
 
 
