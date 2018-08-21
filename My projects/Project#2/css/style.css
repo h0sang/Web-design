@@ -124,6 +124,30 @@ section {
   text-decoration: none;
 }
 
+#thirt {
+  height: 650x;
+  background: url(../images/thirt_sel.png) no-repeat center top / cover;
+}
+
+.face {
+  margin-top: 160px;
+}
+
+#thirt p {
+  margin-top: 35px;
+  font-size: 43px;
+  color: white;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.point {
+  margin-top: 100px;
+}
+
+
+
+
 
 
 
