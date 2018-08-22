@@ -7,6 +7,7 @@
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
 
       .myPlace {
@@ -15,6 +16,7 @@
         margin: 10% auto;
         background-color: lightgray;
         box-shadow: 0 0 5px 1px black;
+        position: relative;
       }
 
       .container {
@@ -23,35 +25,71 @@
         padding-top: 10%;
       }
 
-      .forButton {
-        margin: auto;
-      }
-
       .button {
         display: block;
-        /*margin: 50px;*/
+        margin-left: auto;
+        margin-right: auto;
+        margin: 30px auto;
         color: white;
         text-decoration: none;
         background-color: black;
         width: 200px;
         text-align: center;
-        padding: 20px 0;
+        height: 65px;
         border: 2px solid white;
         border-radius: 10px;
+        line-height: 65px;
+      }
+
+      .fun:hover {
+        border-color: green;
+        font-size: 28px;
+        color: tomato;
+        background-color: white;
+      }
+
+      .Stop:hover {
+        border-color: yellow;
+        font-style: italic;
+        font-size: 20px;
+        color: green;
+        background-color: white;
+      }
+
+      .gle:hover {
+        border-color: red;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: blue;
+        background-color: white;
+      }
+
+      .box {
+        position: absolute;
+        top: 5%;
+        left: 70%;
+        border: 1px solid black;
+        width: 150px;
+        height: 80px;
+        text-align: center;
+        padding-top: 5px;
+        box-shadow: 0 0 2px 1px gray;
       }
 
     </style>
   </head>
   <body>
     <div class="myPlace">
+      <div class="box">
+        <h2>Wow</h2>
+        <p>Surprise</p>
+      </div>
       <div class="container">
-        <div class="forButton">
-          <a href="/" class="fun button">Click on me</a><br>
+        <a href="/" class="fun button">Click on me</a><br>
 
-          <a href="/" class="Stop button">Off all</a><br>
+        <a href="/" class="Stop button">Off all</a><br>
 
-          <a href="http://google.com" target="_blank" class="gle button">I don't know</a>
-        </div>
+        <a href="http://google.com" target="_blank" class="gle button">I don't know</a>
       </div>
     </div>
   </body>
