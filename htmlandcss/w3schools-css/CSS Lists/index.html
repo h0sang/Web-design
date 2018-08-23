@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lists</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: lightgray;
+      }
+
+      .container {
+        width: 960px;
+        height: 2000px;
+        margin: 10% auto;
+        background-color: white;
+        box-shadow: 0 0 5px 1px black;
+        padding: 5% 200px;
+      }
+
+      .list {
+        margin-bottom: 100px;
+
+      }
+
+      ul {
+        margin: 10px;
+        list-style: square inside url('icon.png');
+      }
+
+      ol {
+        margin: 10px;
+        list-style-type: upper-roman;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="list">
+        <h3>What do you choose from this?</h3>
+        <ul>
+          <li>Vegetables</li>
+          <li>Fruits</li>
+        </ul>
+      </div>
+      <div class="list">
+        <h3>What do you have for breakfast?</h3>
+        <ol>
+          <li>Coffee</li>
+          <li>Tea</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
