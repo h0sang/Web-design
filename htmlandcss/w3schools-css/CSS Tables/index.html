@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: lightgray;
+      }
+
+      .container {
+        width: 960px;
+        height: 2000px;
+        margin: 10% auto;
+        padding: 5% 100px;
+        box-shadow: 0 0 5px 1px black;
+        background-color: white;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        border: 2px solid black;
+      }
+
+      th {
+        height: 50px;
+      background-color: #4CAF50;
+      }
+
+      tr:hover {
+        background-color: #ddd;
+      }
+
+      td {
+        height: 50px;
+      }
+
+      th, td {
+        border-bottom: 1px solid lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="table1">
+        <table>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+          </tr>
+          <tr>
+            <td>Ihor</td>
+            <td>Korshunov</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
