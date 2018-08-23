@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: lightgray;
+      }
+
+      .container {
+        width: 960px;
+        height: 2000px;
+        background-color: white;
+        margin: 10% auto;
+        padding: 5% 100px;
+        box-shadow: 0 0 5px 1px black;
+      }
+
+      h1.hidden {
+        visibility: hidden;
+      }
+
+      h1.display {
+        display: none;
+      }
+
+      hr {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>This is a visible heading</h1>
+      <h1 class="hidden">This is a hidden heading</h1>
+      <p>Notice that the h1 element with display: none; does not take up any space.</p>
+      <hr>
+      <h1>This is a visible heading</h1>
+      <h1 class="display">This is a hidden heading</h1>
+      <p>Notice that the hidden heading still takes up space.</p>
+    </div>
+  </body>
+</html>
