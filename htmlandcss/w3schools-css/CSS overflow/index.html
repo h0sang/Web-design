@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: lightgray;
+      }
+      .container {
+        position: relative;
+        width: 960px;
+        height: 2000px;
+        margin: 10% auto;
+        border: 1px solid black;
+        box-shadow: 0 0 5px 1px black;
+        background-color: white;
+      }
+      .position {
+        position: absolute;
+        top: 3%;
+        right: 3%;
+      }
+      .overflow, .outer-container {
+        width: 200px;
+        height: 200px;
+      }
+      .outer-container {
+        position: relative;
+        width: 210px;
+        border: 4px solid green;
+        overflow: hidden;
+      }
+      .inner-container {
+        position: absolute;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-right: 150px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="position">
+        <div class="outer-container">
+          <div class="inner-container">
+            <div class="overflow">
+              This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
