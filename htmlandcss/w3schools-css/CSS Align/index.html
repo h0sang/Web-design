@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Align</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .center {
+        margin: auto;
+        width: 30%;
+        border: 3px solid #73AD21;
+        padding: 20px;
+      }
+      .center1 {
+        text-align: center;
+        border: 3px solid green;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /*margin: auto;*/
+      }
+      .right {
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        border: 3px solid #73AD21;
+        padding: 10px;
+      }
+      .right1 {
+        float: right;
+        width: 300px;
+        border: 3px solid #73AD21;
+        padding: 10px;
+      }
+      .center2 {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+      }
+
+    .center2 p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2>Center Align Elements</h2>
+    <p>To horizontally center a block element (like div), use margin: auto;</p>
+
+    <div class="center">
+      <p><b>Note: </b>Using margin:auto will not work in IE8, unless a !DOCTYPE is declared.</p>
+    </div>
+
+    <h2>Center Text</h2>
+
+    <div class="center1">
+      <p>This text is centered.</p>
+    </div>
+
+    <h2>Center an Image</h2>
+    <p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+    <img src="Iggy.png" alt="Paris">
+
+    <div style="margin-bottom:100px;">
+    <h2>Right Align</h2>
+    <p>An example of how to right align elements with the position property:</p>
+
+    <div class="right">
+      <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+    </div>
+    </div>
+    <div>
+    <h2>Right Align</h2>
+    <p>An example of how to right align elements with the float property:</p>
+
+    <div class="right1">
+      <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+    </div>
+
+    <div style="margin-top:100px;">
+      <h2>Centering</h2>
+      <p>In this example, we use positioning and the transform property to vertically and horizontally center the div element:</p>
+
+      <div class="center2">
+        <p>I am vertically and horizontally centered.</p>
+      </div>
+
+      <p>Note: The transform property is not supported in IE8 and earlier versions.</p>
+    </div>
+  </div>
+  </body>
+</html>
