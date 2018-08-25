@@ -15,15 +15,15 @@
       .container {
         position: relative;
         width: 960px;
-        height: 2000px;
+        height: 5500px;
         margin: 10% auto;
+        padding: 15px;
         border: 1px solid black;
         box-shadow: 0 0 5px 1px black;
         background-color: white;
       }
       .float {
         border: 1px solid green;
-        margin: 15px;
         margin-bottom: 150px;
       }
       .left img {
@@ -34,7 +34,6 @@
       }
 
       .clear {
-        margin: 20px;
         margin-bottom: 150px;
       }
       .div1 {
@@ -57,6 +56,74 @@
       .div4 {
         border: 1px solid red;
         clear: left;
+      }
+
+      .simplediv {
+        border: 1px solid red;
+        margin-bottom: 150px;
+        padding: 10px;
+      }
+      .clearfix1 {
+        overflow: auto;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .clearfix {
+        margin-bottom: 150px;
+      }
+
+      .box {
+        float: left;
+        width: 40%;
+        height: 150px;
+        padding: 50px;
+      }
+      .center {
+        width: 20%;
+      }
+
+      .pic {
+        float: left;
+        border: 1px solid black;
+        width: 33.33%;
+        height: 200px;
+        padding: 5px;
+        overflow: hidden;
+        position: relative;
+      }
+      .pic img {
+        position: absolute;
+        left: 40px;
+        top: -20px;
+      }
+
+      .menu {
+        width: 100%;
+        height: 50px;
+        background-color: #333;
+      }
+      ul {
+        list-style: none;
+      }
+      ul li {
+        float: left;
+        width: 60px;
+      }
+      ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+      }
+      ul li a:hover {
+        background-color: #000;
+      }
+      .active {
+        background-color: red;
       }
     </style>
   </head>
@@ -90,6 +157,75 @@
         <h2>Without clear</h2>
         <div class="div3">div1</div>
         <div class="div4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</div>
+      </div>
+
+      <div class="simplediv">
+        <h1>With float: right;</h1>
+        <p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+        <p><img src="Iggy.png" alt="Iggy" width="170px" style="float:right;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+      </div>
+      <div class="simplediv clearfix1">
+        <h1>With float: right;</h1>
+        <p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+        <p><img src="Iggy.png" alt="Iggy" width="170px" style="float: right;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+      </div>
+
+      <div class="simplediv">
+        <h2>Without clearfix</h2>
+        <p><img src="Iggy.png" alt="Iggy" width="170px" style="float: right;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+      </div>
+      <div class="simplediv clearfix">
+        <h2>With clearfix</h2>
+        <p><img src="Iggy.png" alt="Iggy" width="170px" style="float: right;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+      </div>
+
+      <div class="clearfix">
+        <div class="box" style="background-color: #bbb;">
+          <p>Some text inside the box</p>
+        </div>
+        <div class="box center" style="background-color: #ccc;">
+          <p>Some text inside the box</p>
+        </div>
+        <div class="box" style="background-color: #ddd;">
+          <p>Some text inside the box</p>
+        </div>
+      </div>
+      <div class="clearfix">
+        <div class="box" style="visibility: hidden;">
+          <p>Some text inside the box</p>
+        </div>
+        <div class="box center" style="background-color: #ccc;">
+          <p>Some text inside the box</p>
+        </div>
+        <div class="box" style="background-color: #ddd";>
+          <p>Some text inside the box</p>
+        </div>
+      </div>
+
+      <div class="clearfix">
+        <h1>Three pictures</h1>
+        <div class="pic">
+          <img src="icon.png" alt="pic" height="250px">
+        </div>
+        <div class="pic">
+          <img src="Iggy.png" alt="dowg" height="250px">
+        </div>
+        <div class="pic">
+          <img src="icon.png" alt="pic" height="250px">
+        </div>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/">News</a></li>
+          <li><a href="/">Contact</a></li>
+          <li><a href="/">About</a></li>
+        </ul>
       </div>
     </div>
   </body>
