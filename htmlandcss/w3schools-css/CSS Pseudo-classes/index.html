@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pseudo-classes</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .link {
+        border: 1px solid red;
+        margin: 20px auto;
+        padding: 10px;
+        width: 5%;
+        height: 40px;
+        text-align: center;
+      }
+      .link > a:link {
+        color: navy;
+        text-decoration: line-through;
+      }
+      /*.link > a:visited {
+        color: pink;
+      }*/
+      .link > a:hover {
+        color: green;
+        font-size: 17px;
+        text-decoration: none;
+      }
+      .link > a:active {
+        color: red;
+        font-size: 13px;
+        text-decoration: overline;
+      }
+
+      .button {
+        text-align: center;
+        background-color: gray;
+        height: 100px;
+        width: 50%;
+        margin: auto;
+        line-height: 100px;
+        color: white;
+        font-size: 25px;
+        border-radius: 10px;
+      }
+      .button:hover {
+        font-family: monospace;
+        background-color: green;
+      }
+      .button:hover body:parent {
+        background-color: pink;
+      }
+      .hidden {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 15px;
+      }
+      .hidden > p {
+        background-color: blue;
+        color: red;
+        font-size: 25px;
+        line-height: 80px;
+        display: none;
+      }
+      .hidden:hover > p {
+        display: block;
+      }
+      .more > p:first-child {
+        color: red;
+      }
+      .more > p:first-child > i:first-child {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="link">
+      <a href="http://google.com">Click me</a>
+    </div>
+
+    <div class="button">
+      Mouse Over Me
+    </div>
+
+    <div class="hidden">Hello, i know you want to click on me
+      <p>Hi, I'm a typical hidden player</p>
+    </div>
+
+    <div class="more">
+      <p>For <i>e</i>xampl<i>e</i></p>
+      <p>For <i>e</i>xampl<i>e</i></p>
+      <p>For <i>e</i>xampl<i>e</i></p>
+      <p>For <i>e</i>xampl<i>e</i></p>
+      <p>For <i>e</i>xampl<i>e</i></p>
+    </div>
+  </body>
+</html>
