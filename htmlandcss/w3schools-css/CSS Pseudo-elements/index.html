@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pseudo-elements</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 960px;
+        margin: 10% auto;
+      }
+      p.text1::first-line {
+        color: red;
+        font-family: monospace;
+        font-size: 17px;
+      }
+      p.text1::first-letter {
+        color: green;
+        font-size: 30px;
+      }
+      h1 {
+        text-align: center;
+      }
+      h1::after {
+        content: " hi";
+      }
+      h1::before {
+        content: "hi ";
+      }
+      ::selection {
+        color: pink;
+        background-color: green;
+      }
+      ::-moz-selection {
+        color: pink;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="text1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et libero auctor neque cursus porttitor at ut erat. Suspendisse rutrum at est eget faucibus. Suspendisse vitae dolor vitae ex tristique eleifend. Etiam porta congue elit, vitae rutrum tellus mollis ac. Phasellus eget tortor ac dui vulputate elementum ut ac ipsum. Aliquam sed ligula sit amet tortor posuere laoreet. Donec interdum aliquet erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et libero auctor neque cursus porttitor at ut erat. Suspendisse rutrum at est eget faucibus. Suspendisse vitae dolor vitae ex tristique eleifend. Etiam porta congue elit, vitae rutrum tellus mollis ac. Phasellus eget tortor ac dui vulputate elementum ut ac ipsum. Aliquam sed ligula sit amet tortor posuere laoreet. Donec interdum aliquet erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et libero auctor neque cursus porttitor at ut erat. Suspendisse rutrum at est eget faucibus. Suspendisse vitae dolor vitae ex tristique eleifend. Etiam porta congue elit, vitae rutrum tellus mollis ac. Phasellus eget tortor ac dui vulputate elementum ut ac ipsum. Aliquam sed ligula sit amet tortor posuere laoreet. Donec interdum aliquet erat.
+      </p>
+      <h1>Some text</h1>
+    </div>
+  </body>
+</html>
