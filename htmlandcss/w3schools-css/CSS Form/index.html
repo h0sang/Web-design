@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
+      form {
+        margin: 10% auto;
+        width: 50%;
+      }
+      input {
+        width: 100%;
+      }
+      input[type="text"] {
+        padding: 8px;
+      }
+      input[type="text"]:focus {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="fname">First name</label>
+      <input type="text" name="Name">
+      <label for="fname">Password</label>
+      <input type="password" name="Pass">
+      <label for="fname">Age</label>
+      <input type="number" name="Age">
+    </form>
+
+  </body>
+</html>
