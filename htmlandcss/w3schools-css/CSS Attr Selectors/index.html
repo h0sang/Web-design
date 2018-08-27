@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UFT-8">
+    <title>Attr Selectors</title>
+    <style>
+      a[target] {
+        background-color: green;
+      }
+      a[target=_top] {
+        font-size: 20px;
+        color: red;
+      }
+      [title~="hi"] {
+        color: red;
+      }
+      [class|=top] {
+        background-color: orange;
+      }
+      [class^="top"] {
+        color: pink;
+      }
+      [class$="test"] {
+        background-color: red;
+      }
+      [class*="12"] {
+        color: green;
+      }
+      input[type="text"] {
+        width: 150px;
+        display: block;
+        margin-bottom: 10px;
+        background-color: yellow;
+      }
+      input[type="text"]:focus {
+        background-color: green;
+      }
+      input[type="button"] {
+        width: 120px;
+        margin-left: 35px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p>The links with a target attribute gets a yellow background:</p>
+
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+    <p>
+      The [attribute~="value"] selector is used to <span title="hi">select</span> elements with an attribute <span title="wowhi">value</span> containing a specified <span title="wow hi">word</span>.
+      The following example selects all <span title="hi wow">elements</span> with a title attribute that <span title="hiwow">contains</span> a space-separated <span title="hi">list</span> of words, one of which is "flower":
+    </p>
+
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcon12tent-top">Are you learning CSS?</p>
+
+    <div class="first_test">The first div element.</div>
+    <div class="second12">The second div element.</div>
+    <div class="testsecond">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+
+    <form name="input" action="" method="get">
+      Firstname:<input type="text" name="Name" value="Enter your firstname" size="20">
+      Lastname:<input type="text" name="Name" value="Enter your lastname" size="20">
+      <input type="button" value="Submit">
+    </form>
+
+  </body>
+</html>
