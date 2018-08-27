@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        height: 100vh;
+        background-color: #f1f1f1;
+        position: relative;
+      }
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .pic {
+        float: left;
+        margin: 10px;
+        width: 250px;
+        border: 1px solid lightgray;
+      }
+      .pic:hover {
+        border-color: black;
+      }
+      .pic img {
+        width: 100%;
+        height: auto;
+      }
+      .des {
+        padding: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="center">
+      <div class="pic">
+        <a href="/" target="_blank">
+          <img src="1.jpg" alt="1" width="300" height="200">
+        </a>
+        <div class="des">
+          <p>Add a description of the image here</p>
+        </div>
+      </div>
+
+      <div class="pic">
+        <a href="/" target="_blank">
+          <img src="2.jpg" alt="2" width="300" height="200">
+        </a>
+        <div class="des">
+          <p>Add a description of the image here</p>
+        </div>
+      </div>
+
+      <div class="pic">
+        <a href="/" target="_blank">
+          <img src="3.jpg" alt="3" width="300" height="200">
+        </a>
+        <div class="des">
+          <p>Add a description of the image here</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
